@@ -1,0 +1,14 @@
+
+[
+    { "id": "1", "name": "Meal Deal","image":"pizza1"},
+    { "id": "2", "name": " Margherita","image":"pizza2" },
+    { "id": "3", "name": " Margherita" ,"image":"pizza1"},
+    { "id": "4", "name": "Meal Deal","image":"pizza2" },
+    { "id": "5", "name": "Meal Deal","image":"pizza1"},
+    { "id": "6", "name": " Margherita","image":"pizza2" },
+    { "id": "7", "name": " Margherita" ,"image":"pizza1"},
+    { "id": "8", "name": "Meal Deal","image":"pizza2" }
+   
+  ]
+
+ 

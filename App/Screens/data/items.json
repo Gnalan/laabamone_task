@@ -1,0 +1,102 @@
+[
+    {
+      "id": "1",
+      "name": "Chicken Pizza",
+      "image": "pizza2",
+      "time": "8 mins",
+      "discount": "25% OFF",
+      "price": 56,
+      "mrp": 56,
+      "qty" :1,
+      "isShowAdd" : false
+    },
+    {
+      "id": "2",
+      "name": "Veg Pizza",
+      "image": "pizza2",
+      "time": "10 mins",
+      "discount": "20% OFF",
+      "price": 75,
+      "mrp": 90,
+      "qty" :1,
+      "isShowAdd" : false
+    },
+    {
+      "id": "3",
+      "name": "Cheese Pizza",
+      "image": "pizza1",
+      "time": "12 mins",
+      "discount": "15% OFF",
+      "price": 80,
+      "mrp": 95,
+      "qty" :1,
+      "isShowAdd" : false
+    },
+    {
+      "id": "4",
+      "name": "Pepperoni Pizza",
+      "image": "pizza1",
+      "time": "9 mins",
+      "discount": "30% OFF",
+      "price": 90,
+      "mrp": 120,
+      "qty" :1,
+      "isShowAdd" : false
+    },
+    {
+      "id": "5",
+      "name": "BBQ Chicken Pizza",
+      "image": "pizza1",
+      "time": "11 mins",
+      "discount": "18% OFF",
+      "price": 85,
+      "mrp": 105,
+      "qty" :1,
+      "isShowAdd" : false
+    },
+    {
+      "id": "6",
+      "name": "Mushroom Pizza",
+      "image": "pizza1",
+      "time": "7 mins",
+      "discount": "22% OFF",
+      "price": 70,
+      "mrp": 90,
+      "qty" :1,
+      "isShowAdd" : false
+    },
+    {
+      "id": "7",
+      "name": "Paneer Tikka Pizza",
+      "image": "pizza1",
+      "time": "10 mins",
+      "discount": "28% OFF",
+      "price": 95,
+      "mrp": 130,
+      "qty" :1,
+      "isShowAdd" : false
+    },
+    {
+      "id": "8",
+      "name": "Paneer Veg Pizza",
+      "image": "pizza1",
+      "time": "10 mins",
+      "discount": "28% OFF",
+      "price": 2000,
+      "mrp": 130,
+      "qty" :1,
+      "isShowAdd" : false
+  },
+    {
+      "id": "8",
+      "name": "Paneer chicken Pizza",
+      "image": "pizza1",
+      "time": "10 mins",
+      "discount": "28% OFF",
+      "price": 1500,
+      "mrp": 130,
+      "qty" :1,
+      "isShowAdd" : false
+    }
+  ]
+  

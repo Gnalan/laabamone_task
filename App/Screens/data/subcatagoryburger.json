@@ -1,0 +1,8 @@
+[
+    { "id": "1", "name": "Classic Burgers","image":"burger"},
+    { "id": "2", "name": "Spicy Burgers","image":"burger" },
+    { "id": "3", "name": "Classic Burgers" ,"image":"burger1"},
+    { "id": "4", "name": "Spicy Burgers","image":"burger1" },
+   
+   
+  ]

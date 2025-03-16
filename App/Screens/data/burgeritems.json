@@ -1,0 +1,101 @@
+[
+  {
+    "id": "11",
+    "name": "Chicken burger",
+    "image": "burger",
+    "time": "8 mins",
+    "discount": "25% OFF",
+    "price": 56,
+    "mrp": 56,
+    "qty" :1,
+    "isShowAdd" : false
+  },
+  {
+    "id": "12",
+    "name": "Hamburger",
+    "image": "burger",
+    "time": "10 mins",
+    "discount": "20% OFF",
+    "price": 75,
+    "mrp": 90,
+    "qty" :1,
+    "isShowAdd" : false
+  },
+  {
+    "id": "13",
+    "name": "Cheese Burger",
+    "image": "burger1",
+    "time": "12 mins",
+    "discount": "15% OFF",
+    "price": 80,
+    "mrp": 95,
+    "qty" :1,
+    "isShowAdd" : false
+  },
+  {
+    "id": "14",
+    "name": "Pepperoni Burger",
+    "image": "burger1",
+    "time": "9 mins",
+    "discount": "30% OFF",
+    "price": 90,
+    "mrp": 120,
+    "qty" :1,
+    "isShowAdd" : false
+  },
+  {
+    "id": "15",
+    "name": "BBQ Chicken Burger",
+    "image": "burger1",
+    "time": "11 mins",
+    "discount": "18% OFF",
+    "price": 85,
+    "mrp": 105,
+    "qty" :1,
+    "isShowAdd" : false
+  },
+  {
+    "id": "16",
+    "name": "BBQ Sliders",
+    "image": "burger1",
+    "time": "7 mins",
+    "discount": "22% OFF",
+    "price": 70,
+    "mrp": 90,
+    "qty" :1,
+    "isShowAdd" : false
+  },
+  {
+    "id": "17",
+    "name": "Ghost Pepper",
+    "image": "burger1",
+    "time": "10 mins",
+    "discount": "28% OFF",
+    "price": 95,
+    "mrp": 130,
+    "qty" :1,
+    "isShowAdd" : false
+  },
+  {
+    "id": "18",
+    "name": "Wagyu Beef",
+    "image": "burger1",
+    "time": "10 mins",
+    "discount": "28% OFF",
+    "price": 2000,
+    "mrp": 130,
+    "qty" :1,
+    "isShowAdd" : false
+},
+  {
+    "id": "19",
+    "name": "Gourmet Burgers",
+    "image": "burger1",
+    "time": "10 mins",
+    "discount": "28% OFF",
+    "price": 1500,
+    "mrp": 130,
+    "qty" :1,
+    "isShowAdd" : false
+  }
+]
