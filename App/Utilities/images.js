@@ -5,6 +5,7 @@ export const Images = {
     pizza2: require("../Assets/Images/pizza2.png"),
     burger: require("../Assets/Images/burger.png"),
     burger1: require("../Assets/Images/burger1.png"),
+    bg:require("../Assets/Images/bg.png"),
 }
 
 

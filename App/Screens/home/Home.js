@@ -210,8 +210,8 @@ const Home = () => {
   const renderHeader = () => {
     return (
       <View style={styles.header}>
-        <View style={{ width: devicewidth * 0.180, height: deviceheight * 0.06 }}>
-          <Image style={{ width: "100%", height: "100%" }} source={Images.applogo} resizeMode='contain' />
+        <View style={{ width: devicewidth * 0.220, height: deviceheight * 0.08 }}>
+          <Image style={{ width: "100%", height: "100%", }} source={Images.applogo} resizeMode='cover' />
         </View>
         <Pressable style={{ padding: "2%" }} onPress={() => navigation.navigate("MyCart")}>
           <AddcartIcon name="shopping-basket-add" size={devicewidth * 0.0620} color={theme.text} style={{}} />

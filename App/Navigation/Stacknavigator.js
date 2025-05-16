@@ -18,6 +18,7 @@ const Stacknavigator = () => {
              <StackComponent.Screen name={"Home"} component={Home} />
              <StackComponent.Screen name={"Login"} component={Login} />
              <StackComponent.Screen name={"MyCart"} component={MyCart} />
+         
        
         </StackComponent.Navigator>
     )

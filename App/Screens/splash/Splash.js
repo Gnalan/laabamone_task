@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image } from 'react-native'
+import { View, Text, StyleSheet, Image, ImageBackground } from 'react-native'
 import React, { useContext } from 'react'
 import { RFValue } from "react-native-responsive-fontsize";
 import { Fonts } from '../../Utilities/fonts';
@@ -14,6 +14,7 @@ const Splash = (props) => {
   const styles = style(theme);
   return (
     <View style={styles.container}>
+      <ImageBackground style={{height:"100%",width:"100%", }} source={Images.bg} resizeMode='cover' >
       <View style={{ width: "100%", height: "100%", justifyContent: "center", }} start={{ x: 0.5, y: 0 }}
       >
         <View style={styles.boxcontainer}>
@@ -30,6 +31,7 @@ const Splash = (props) => {
           <Button title={"Get Started"} onpress={() => navigation.navigate("Login")} />
         </View>
       </View>
+      </ImageBackground>
 
     </View>
   )
