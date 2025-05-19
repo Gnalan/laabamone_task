@@ -27,7 +27,7 @@ const validationSchema = Yup.object({
     ),
 })
 const defaultCredtentials = {
-    email: 'laabamone@gmail.com',
+    email: 'guna@gmail.com',
     password: 'Test@123'
 };
 
