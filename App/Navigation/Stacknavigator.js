@@ -19,7 +19,7 @@ const Stacknavigator = () => {
     return (
         <StackComponent.Navigator
             screenOptions={MyTransition}
-            initialRouteName={"PushNotification"}
+            initialRouteName={"Validation"}
         >
              <StackComponent.Screen name={"Splash"} component={Splash} />
              <StackComponent.Screen name={"Home"} component={Home} />

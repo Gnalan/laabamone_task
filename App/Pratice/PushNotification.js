@@ -6,10 +6,11 @@ import {
     PermissionsAndroid,
     Linking,
   } from 'react-native';
-  import React, { useEffect } from 'react';
+  import React, { useEffect, useState } from 'react';
   import messaging from '@react-native-firebase/messaging';
   
   const PushNotification = () => {
+    const [fcmToken, setFcmToken] = useState('');
     const requestNotificationPermission = async () => {
       if (Platform.OS === 'android' && Platform.Version >= 33) {
         const hasPermission = await PermissionsAndroid.check(
@@ -70,10 +71,14 @@ import {
     };
   
     const getFcmToken = async () => {
+     
       try {
+        
         const fcmToken = await messaging().getToken();
+        
         if (fcmToken) {
           console.log('FCM Token:', fcmToken);
+          setFcmToken(fcmToken); 
         } else {
           console.log('Failed to get FCM token');
         }
@@ -107,6 +112,12 @@ import {
     return (
       <View style={{ flex: 1, backgroundColor: '#fff', justifyContent: 'center', alignItems: 'center' }}>
         <Text style={{ color: 'blue' }}>Hello Guna</Text>
+        <View style={{backgroundColor:"red",width:"100%",height:"10%"}}> 
+        <Text style={{ marginTop: 20, color: 'black', }}>FCM Token:{fcmToken}</Text>
+        </View>
+       
+
+        
       </View>
     );
   };
