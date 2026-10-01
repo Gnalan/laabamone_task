@@ -11,6 +11,8 @@ import Validation from "../Validation";
 import GoogleMapTask from "../Pratice/GoogleMapzTask";
 import GoogleSearchAddress from "../Pratice/GoogleSearchAddress";
 import PushNotification from "../Pratice/PushNotification";
+import HomeNew from "../navigationfile/HomeNew";
+import AboutNew from "../navigationfile/AboutNew";
 
 
 const StackComponent = createStackNavigator();
@@ -19,7 +21,7 @@ const Stacknavigator = () => {
     return (
         <StackComponent.Navigator
             screenOptions={MyTransition}
-            initialRouteName={"Validation"}
+            initialRouteName={"Splash"}
         >
              <StackComponent.Screen name={"Splash"} component={Splash} />
              <StackComponent.Screen name={"Home"} component={Home} />
@@ -41,7 +43,8 @@ const Stacknavigator = () => {
              {/* push notification*/}
              <StackComponent.Screen name={"PushNotification"} component={PushNotification} />
        
-
+             <StackComponent.Screen name={"HomeNew"} component={HomeNew} />
+             <StackComponent.Screen name={"AboutNew"} component={AboutNew} />
 
 
         </StackComponent.Navigator>
