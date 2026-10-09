@@ -13,6 +13,7 @@ import GoogleSearchAddress from "../Pratice/GoogleSearchAddress";
 import PushNotification from "../Pratice/PushNotification";
 import HomeNew from "../navigationfile/HomeNew";
 import AboutNew from "../navigationfile/AboutNew";
+import Task from "../Pratice/Task"
 
 
 const StackComponent = createStackNavigator();
@@ -21,30 +22,32 @@ const Stacknavigator = () => {
     return (
         <StackComponent.Navigator
             screenOptions={MyTransition}
-            initialRouteName={"Splash"}
+            initialRouteName={"Task"}
         >
-             <StackComponent.Screen name={"Splash"} component={Splash} />
-             <StackComponent.Screen name={"Home"} component={Home} />
-             <StackComponent.Screen name={"Login"} component={Login} />
-             <StackComponent.Screen name={"MyCart"} component={MyCart} />
+            <StackComponent.Screen name={"Splash"} component={Splash} />
+            <StackComponent.Screen name={"Home"} component={Home} />
+            <StackComponent.Screen name={"Login"} component={Login} />
+            <StackComponent.Screen name={"MyCart"} component={MyCart} />
 
 
-             {/* pratice component */}
-             <StackComponent.Screen name={"DataList"} component={DataList} />
-             <StackComponent.Screen name={"DataPagination"} component={DataPagination} />
-             <StackComponent.Screen name={"Validation"} component={Validation} />
+            {/* pratice component */}
+            <StackComponent.Screen name={"DataList"} component={DataList} />
+            <StackComponent.Screen name={"DataPagination"} component={DataPagination} />
+            <StackComponent.Screen name={"Validation"} component={Validation} />
 
-             {/* google map */}
-             <StackComponent.Screen name={"GoogleMapTask"} component={GoogleMapTask} />
+            {/* google map */}
+            <StackComponent.Screen name={"GoogleMapTask"} component={GoogleMapTask} />
 
             {/* google places autocomplete*/}
-                <StackComponent.Screen name={"GoogleSearchAddress"} component={GoogleSearchAddress} />
-               
-             {/* push notification*/}
-             <StackComponent.Screen name={"PushNotification"} component={PushNotification} />
-       
-             <StackComponent.Screen name={"HomeNew"} component={HomeNew} />
-             <StackComponent.Screen name={"AboutNew"} component={AboutNew} />
+            <StackComponent.Screen name={"GoogleSearchAddress"} component={GoogleSearchAddress} />
+
+            {/* push notification*/}
+            <StackComponent.Screen name={"PushNotification"} component={PushNotification} />
+
+            <StackComponent.Screen name={"HomeNew"} component={HomeNew} />
+            <StackComponent.Screen name={"AboutNew"} component={AboutNew} />
+            <StackComponent.Screen name={"Task"} component={Task} />
+
 
 
         </StackComponent.Navigator>
