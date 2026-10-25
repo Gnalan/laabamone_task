@@ -428,99 +428,99 @@
 
 
 
-// import React, { useState, useEffect } from 'react';
-// import {
-//     View,
-//     StyleSheet,
-//     Platform,
-//     PermissionsAndroid,
-//     ActivityIndicator,
-//     Alert,
-// } from 'react-native';
-// import MapView, { Marker } from 'react-native-maps';
-// import Geolocation from 'react-native-geolocation-service';
+import React, { useState, useEffect } from 'react';
+import {
+    View,
+    StyleSheet,
+    Platform,
+    PermissionsAndroid,
+    ActivityIndicator,
+    Alert,
+} from 'react-native';
+import MapView, { Marker } from 'react-native-maps';
+import Geolocation from 'react-native-geolocation-service';
 
-// export default function LocationMapScreen() {
-//     const [location, setLocation] = useState(null);
-//     const [loading, setLoading] = useState(true);
+export default function LocationMapScreen() {
+    const [location, setLocation] = useState(null);
+    const [loading, setLoading] = useState(true);
 
-//     // Runtime Permission Handler
-//     const requestLocationPermission = async () => {
-//         if (Platform.OS === 'ios') {
-//             const auth = await Geolocation.requestAuthorization('whenInUse');
-//             return auth === 'granted';
-//         }
+    // Runtime Permission Handler
+    const requestLocationPermission = async () => {
+        if (Platform.OS === 'ios') {
+            const auth = await Geolocation.requestAuthorization('whenInUse');
+            return auth === 'granted';
+        }
 
-//         if (Platform.OS === 'android') {
-//             const granted = await PermissionsAndroid.request(
-//                 PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
-//                 {
-//                     title: 'Location Permission',
-//                     message: 'This app needs access to your location to show on map.',
-//                     buttonPositive: 'OK',
-//                 }
-//             );
-//             return granted === PermissionsAndroid.RESULTS.GRANTED;
-//         }
-//         return false;
-//     };
+        if (Platform.OS === 'android') {
+            const granted = await PermissionsAndroid.request(
+                PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+                {
+                    title: 'Location Permission',
+                    message: 'This app needs access to your location to show on map.',
+                    buttonPositive: 'OK',
+                }
+            );
+            return granted === PermissionsAndroid.RESULTS.GRANTED;
+        }
+        return false;
+    };
 
-//     useEffect(() => {
-//         const fetchCurrentLocation = async () => {
-//             const hasPermission = await requestLocationPermission();
-//             if (!hasPermission) {
-//                 Alert.alert('Permission Denied', 'Location access is required.');
-//                 setLoading(false);
-//                 return;
-//             }
+    useEffect(() => {
+        const fetchCurrentLocation = async () => {
+            const hasPermission = await requestLocationPermission();
+            if (!hasPermission) {
+                Alert.alert('Permission Denied', 'Location access is required.');
+                setLoading(false);
+                return;
+            }
 
-//             Geolocation.getCurrentPosition(
-//                 (position) => {
-//                     setLocation({
-//                         latitude: position.coords.latitude,
-//                         longitude: position.coords.longitude,
-//                         latitudeDelta: 0.01,
-//                         longitudeDelta: 0.01,
-//                     });
-//                     setLoading(false);
-//                 },
-//                 (error) => {
-//                     Alert.alert('Error', error.message);
-//                     setLoading(false);
-//                 },
-//                 { enableHighAccuracy: false, timeout: 30000, maximumAge: 10000 }
-//             );
-//         };
+            Geolocation.getCurrentPosition(
+                (position) => {
+                    setLocation({
+                        latitude: position.coords.latitude,
+                        longitude: position.coords.longitude,
+                        latitudeDelta: 0.01,
+                        longitudeDelta: 0.01,
+                    });
+                    setLoading(false);
+                },
+                (error) => {
+                    Alert.alert('Error', error.message);
+                    setLoading(false);
+                },
+                { enableHighAccuracy: false, timeout: 30000, maximumAge: 10000 }
+            );
+        };
 
-//         fetchCurrentLocation();
-//     }, []);
+        fetchCurrentLocation();
+    }, []);
 
-//     if (loading || !location) {
-//         return (
-//             <View style={styles.center}>
-//                 <ActivityIndicator size="large" color="#007AFF" />
-//             </View>
-//         );
-//     }
+    if (loading || !location) {
+        return (
+            <View style={styles.center}>
+                <ActivityIndicator size="large" color="#007AFF" />
+            </View>
+        );
+    }
 
-//     return (
-//         <View style={styles.container}>
-//             <MapView style={styles.map} initialRegion={location} showsUserLocation>
-//                 <Marker
-//                     coordinate={{
-//                         latitude: location.latitude,
-//                         longitude: location.longitude,
-//                     }}
-//                     title="Current Location"
-//                     description="You are currently here"
-//                 />
-//             </MapView>
-//         </View>
-//     );
-// }
+    return (
+        <View style={styles.container}>
+            <MapView style={styles.map} initialRegion={location} showsUserLocation>
+                <Marker
+                    coordinate={{
+                        latitude: location.latitude,
+                        longitude: location.longitude,
+                    }}
+                    title="Current Location"
+                    description="You are currently here"
+                />
+            </MapView>
+        </View>
+    );
+}
 
-// const styles = StyleSheet.create({
-//     container: { flex: 1 },
-//     map: { width: '100%', height: '100%' },
-//     center: { flex: 1, justifyContent: 'center', alignItems: 'center' },
-// });
+const styles = StyleSheet.create({
+    container: { flex: 1 },
+    map: { width: '100%', height: '100%' },
+    center: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+});

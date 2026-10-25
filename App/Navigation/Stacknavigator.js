@@ -13,7 +13,9 @@ import GoogleSearchAddress from "../Pratice/GoogleSearchAddress";
 import PushNotification from "../Pratice/PushNotification";
 import HomeNew from "../navigationfile/HomeNew";
 import AboutNew from "../navigationfile/AboutNew";
-import Task from "../Pratice/Task"
+import Task from "../Pratice/Task";
+
+
 
 
 const StackComponent = createStackNavigator();
@@ -22,7 +24,7 @@ const Stacknavigator = () => {
     return (
         <StackComponent.Navigator
             screenOptions={MyTransition}
-            initialRouteName={"Task"}
+            initialRouteName={"Splash"}
         >
             <StackComponent.Screen name={"Splash"} component={Splash} />
             <StackComponent.Screen name={"Home"} component={Home} />
@@ -47,6 +49,8 @@ const Stacknavigator = () => {
             <StackComponent.Screen name={"HomeNew"} component={HomeNew} />
             <StackComponent.Screen name={"AboutNew"} component={AboutNew} />
             <StackComponent.Screen name={"Task"} component={Task} />
+
+
 
 
 
